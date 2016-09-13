@@ -15,10 +15,10 @@ _start:
     ;			rdx = count i.e string length;
     ;
 
-	; put 1 to rax register rax-temp register; when we call syscall rax mush contain syscall number
+	; put 1 to rax register rax-temp register; when we call syscall rax must contain syscall number
 	mov rax, 1	
 
-	; put 1 to rdi register: rdi: used to pass 1st argument to the function.
+	; put 1 to rdi register: rdi: used to pass 1st argument to the function, stdout.
 	mov rdi, 1 
 
 	; rsi: used to pass 2nd argument to the function.
